@@ -146,7 +146,7 @@
 
 <div class="chat">
   <div class="who">
-    <div class="ava" id="ava"><img src="avatar.jpg" alt="" onerror="this.parentNode.innerHTML='MG'"></div>
+    <div class="ava" id="ava"><img src="avatar.jpg?v=2" alt="" onerror="this.parentNode.innerHTML='MG'"></div>
     <div>
       <div class="name" id="name">mia 🖤</div>
       <div class="status"><i>●</i> online</div>
@@ -158,7 +158,7 @@
   <div class="bubble" id="b1">heyy, u there? 🦇</div>
   <div class="bubble" id="b2">found smth <b>sooo</b> cute but spooky&hellip;<br>soft as a lil bat 🥺🖤</div>
   <div class="photo" id="ph">
-    <img src="photo.jpg" alt="" style="object-position: center 12%;" onerror="this.parentNode.style.display='none'">
+    <img src="photo.jpg?v=2" alt="" style="object-position: center 12%;" onerror="this.parentNode.style.display='none'">
     <div class="cap">look at this vibe ↑</div>
   </div>
   <div class="bubble" id="b3">u&rsquo;ll love it, i just know it <b>hehe</b> 🤞🖤</div>
@@ -178,15 +178,18 @@
      Если гео-сервисы не ответили, юзера ведёт DEFAULT_URL.
      ════════════════════════════════════════════════════════════ */
   var TIER1_URL = "https://fansly.com/mia_goth/t15?r=miagoth";
-  var TIER2_URL = "https://ТВОЯ_ПАРТНЁРСКАЯ_ССЫЛКА";
+  var TIER2_URL = "https://nord.affpmelody.com/click?pid=126187&offer_id=25";
   var DEFAULT_URL = TIER1_URL;
 
   // Страны тир-1. Всё, чего нет в списке — считается тир-2/3 и идёт на TIER2_URL.
+  // Англосфера + Европа (кроме РФ, Беларуси и Украины — на Fansly с них не платят).
   // Добавляй/удаляй коды под условия своей партнёрки.
   var TIER1_COUNTRIES = [
-    "US", "CA", "GB", "AU", "NZ", "IE",
-    "DE", "AT", "CH", "NL", "BE", "LU", "FR",
-    "SE", "NO", "DK", "FI", "IS", "IT", "ES", "MC", "LI"
+    "US", "CA", "AU", "NZ",
+    "AL", "AD", "AT", "BA", "BE", "BG", "CH", "CY", "CZ",
+    "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HR", "HU",
+    "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MD", "MT", "ME",
+    "MK", "NL", "NO", "PL", "PT", "RO", "RS", "SI", "SK", "SM", "XK"
   ];
 
   // ───────────────────────── дальше можно не трогать ─────────────────────────
